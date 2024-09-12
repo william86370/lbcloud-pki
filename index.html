@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKI Trust Chain Certificates</title>
+    <style>
+        body {
+            background-color: #1d1f21;
+            color: #c5c8c6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .certificate-list {
+            margin-top: 30px;
+        }
+
+        .certificate-item {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #707070;
+        }
+    </style>
+</head>
+<body>
+    <h1>PKI Trust Chain Certificates</h1>
+    <p>Download the following PKI Trust Chain CA certificates for use in your client configuration.</p>
+
+    <div class="certificate-list">
+        <div class="certificate-item">
+            <button onclick="window.location.href='lbcloud-alltrust.pem'">Download Alltrust Certificate</button>
+        </div>
+        <div class="certificate-item">
+            <button onclick="window.location.href='lbcloud-intermetiate-ca-yubikey-1.pem'">Download Intermediate CA Yubikey 1</button>
+        </div>
+        <div class="certificate-item">
+            <button onclick="window.location.href='lbcloud-pki-root-1.pem'">Download PKI Root 1</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Internal PKI Service
+    </footer>
+</body>
+</html>
